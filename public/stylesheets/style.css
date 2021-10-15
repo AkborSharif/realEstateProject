@@ -35,7 +35,8 @@
 }
 .btn2:hover {
 	box-shadow: 5px 5px 20px #808d92;
-	color: #fff;
+	background-color: #ffffff;
+	color: #33b5e5;
 }
 
 .btn3 {
@@ -82,19 +83,32 @@
 
 .nav-link {
 	display: block;
-	padding: 0.5rem 1rem;
+	padding: 0.1rem 0.1rem;
+	box-shadow: #212529;
 	color: #ffffff;
 	text-decoration: none;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
 		border-color 0.15s ease-in-out;
 }
-.nav-link:hover {
-	background-color: #ffffff;
-}
+
 .text-white {
 	color: #ffffff;
 }
+.nav-link:hover {
+	/* background-color: #ffffff; */
+	color: aqua;
+}
 
-.nav-link .active {
-	background-color: #ffffff;
+.active {
+	/* background-color: #bebebe; */
+	color: aqua;
+}
+.navbar-toggler {
+	padding: 0.25rem 0.75rem;
+	font-size: 1.5rem;
+	line-height: 1;
+	background-color: transparent;
+	border: 1px solid;
+	border-radius: 0.25rem;
+	transition: box-shadow 0.15s ease-in-out;
 }
