@@ -1,10 +1,79 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.btn1 {
+	background-color: #33b5e5;
+	border: none;
+	border-radius: 40px;
+	color: white;
+	padding: 5px 30px;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 0px 8px 15px rgba(241, 234, 234, 0.1);
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
 }
 
-a {
-  color: #00B7FF;
+.btn1:hover {
+	box-shadow: 5px 5px 20px #808d92;
+	color: #fff;
+}
+
+.btn2 {
+	background-color: #33b5e5;
+	border: none;
+	color: white;
+	padding: 5px 80px;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+.btn2:hover {
+	box-shadow: 5px 5px 20px #808d92;
+	color: #fff;
+}
+
+.btn3 {
+	background-color: #33b5e5;
+	border: none;
+	color: white;
+	padding: 5px 50px;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	text-decoration: none;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+.btn3:hover {
+	box-shadow: 5px 5px 20px #808d92;
+	color: #fff;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: 'Times New Roman', Times, serif;
+	line-height: 1.5;
+	color: #212529;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #33b5e5;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .btn4 {
