@@ -75,3 +75,26 @@
 	border-radius: 0.25rem;
 	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+.bg-blue {
+	background-color: #0559b3;
+}
+
+.nav-link {
+	display: block;
+	padding: 0.5rem 1rem;
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out;
+}
+.nav-link:hover {
+	background-color: #ffffff;
+}
+.text-white {
+	color: #ffffff;
+}
+
+.nav-link .active {
+	background-color: #ffffff;
+}
