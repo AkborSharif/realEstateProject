@@ -1,8 +1,27 @@
+.sidenav {
+	height: 80%;
+	width: 50px;
+	position: fixed;
+	z-index: 1;
+	top: 20%;
+	left: 0;
+
+	overflow-x: hidden;
+	padding-top: 40px;
+	margin-top: 50px;
+}
+
+.social {
+}
+.social:hover {
+	background-color: aqua;
+}
+
 .btn1 {
-	background-color: #33b5e5;
+	background-color: #00315e;
 	border: none;
 	border-radius: 40px;
-	color: white;
+	color: rgb(100, 194, 194);
 	padding: 5px 30px;
 	font-family: 'Times New Roman', Times, serif;
 	text-align: center;
@@ -15,8 +34,9 @@
 }
 
 .btn1:hover {
-	box-shadow: 5px 5px 20px #808d92;
-	color: #fff;
+	box-shadow: 5px 5px 20px #000000;
+	/* background-color: #414950; */
+	/* color: rgba(2, 2, 2, 0.1); */
 }
 
 .btn2 {
