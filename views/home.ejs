@@ -4,17 +4,24 @@
      <head>
 
           <link rel='stylesheet' href='/stylesheets/style.css' />
+
+          <title>
+               <%= title %>
+          </title>
           <%- include('header.ejs') %>
-               <title>
-                    <%= title %>
-               </title>
      </head>
 
      <body>
-          <section class="container">
-               <p>Thank you from <%= title %> to you.
+          <section class="p-5">
+               <p class="container"> Thank you from <%= title %> to you.
                </p>
+               <p class="container"></p>
+
           </section>
+
      </body>
+
+     <%- include('footer.ejs') %>
+
 
 </html>
