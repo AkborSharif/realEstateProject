@@ -19,8 +19,8 @@
           </section>
 
           <section class="p-5">
-               <div class="d-grid gap-2 col-2 mx-auto">
-                    <button class="btn btn-danger box-shadow--16dp" type="button">Get Started!</button>
+               <div class="d-grid gap-2 col-3 mx-auto">
+                    <button class="btn btn-danger box-shadow--16dp" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="getStarted()">Get Started!</button>
                </div>
 
 
@@ -60,5 +60,23 @@
           </div>
      </body>
 
+<script>
+      var x = document.getElementById("login");
+               var y = document.getElementById("signup");
+               function getStarted() {
+                    if (x.classList.contains("d-block"))
+                    {
+                         x.classList.remove('d-block');
+                         x.classList.add('d-none');
+                    }
 
+                    if (y.classList.contains('d-none'))
+                    {
+                         y.classList.remove('d-none');
+                    }
+                    y.classList.add('d-block');
+
+               }
+
+</script>
 </html>
