@@ -78,8 +78,8 @@
                                         aria-label="Close"></button>
                               </div>
                               <div class="mx-auto p-3">
-                                   <button class="btn2" onclick="login()">Login</button>
-                                   <button class="btn2" onclick="signup()">SignUp</button>
+                                   <button class="btn2 " id="btnLogin" onclick="login()">Login</button>
+                                   <button class="btn2 " id="btnSignup" onclick="signup()">SignUp</button>
                               </div>
                               <div class="modal-body">
                                    <form id="login" class="d-block">
@@ -133,7 +133,18 @@
           <script>
                var x = document.getElementById("login");
                var y = document.getElementById("signup");
+               var loginButton = document.getElementById("btnLogin")
+               var signupButton = document.getElementById("btnSignup")
+
                function login() {
+                    if (loginButton.classList.contains("btn2"))
+                    {
+                         loginButton.classList.remove("btn2")
+                         loginButton.classList.add("change-background")
+                    }
+                    signupButton.classList.remove("change-background")
+                    signupButton.classList.add("btn2")
+
                     if (y.classList.contains("d-block"))
                     {
                          y.classList.remove('d-block');
@@ -144,9 +155,18 @@
                          x.classList.remove('d-none');
                     }
                     x.classList.add('d-block');
-                    x.style.background="white"; 
                }
                function signup() {
+
+
+                    if (signupButton.classList.contains("btn2"))
+                    {
+                         signupButton.classList.remove("btn2")
+                         signupButton.classList.add("change-background")
+                    }
+                    loginButton.classList.remove("change-background")
+                    loginButton.classList.add("btn2")
+
                     if (x.classList.contains("d-block"))
                     {
                          x.classList.remove('d-block');
@@ -158,8 +178,8 @@
                          y.classList.remove('d-none');
                     }
                     y.classList.add('d-block');
-
                }
           </script>
      </body>
+
 </html>
