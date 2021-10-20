@@ -2,18 +2,79 @@
 <html>
 
      <head>
+
+          <link rel='stylesheet' href='/stylesheets/style.css' />
+
           <title>
                <%= title %>
           </title>
-          <link rel='stylesheet' href='/stylesheets/style.css' />
+          <%- include('header.ejs') %>
      </head>
 
-     <body>
-          <h1>
-               <%= title %>
-          </h1>
-          <p>Thank you from <%= title %> to you.
-          </p>
+     <body >
+
+          <section class="p-5">
+               <h2 class="container text-center"> Thank you from <%= title %> to you.
+                         <h2 />
+          </section>
+
+          <section class="p-5">
+               <div class="d-grid gap-2 col-3 mx-auto">
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" onclick="getStarted()">Get Started</button>
+               </div>
+          </section>
+
+          <section class="p-5 container">
+               <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                         <div class="carousel-item active">
+                              <img src="https://pi.movoto.com/p/312/2131193_0_B3v2r7_p.jpeg"
+                                   class="d-block w-100 mh-80 " alt="...">
+                         </div>
+                         <div class="carousel-item">
+                              <img src="https://pi.movoto.com/p/312/2131007_0_UubMFF_p.jpeg"
+                                   class="d-block w-100 mh-80 " alt="...">
+                         </div>
+                         <div class="carousel-item">
+                              <img src="https://pi.movoto.com/p/2001/t817f1275t_0_UA2qZN_p.jpeg"
+                                   class="d-block w-100 mh-80 " alt="...">
+                         </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                         data-bs-slide="prev">
+                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                         data-bs-slide="next">
+                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Next</span>
+                    </button>
+               </div>
+          </section>
+
+          <div class="footer mx-auto">
+               <%- include('footer.ejs') %>
+          </div>
      </body>
 
+<script>
+      var x = document.getElementById("login");
+               var y = document.getElementById("signup");
+               function getStarted() {
+                    if (x.classList.contains("d-block"))
+                    {
+                         x.classList.remove('d-block');
+                         x.classList.add('d-none');
+                    }
+
+                    if (y.classList.contains('d-none'))
+                    {
+                         y.classList.remove('d-none');
+                    }
+                    y.classList.add('d-block');
+
+               }
+
+</script>
 </html>
