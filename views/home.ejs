@@ -11,7 +11,8 @@
           <%- include('header.ejs') %>
      </head>
 
-     <body>
+     <body >
+
           <section class="p-5">
                <h2 class="container text-center"> Thank you from <%= title %> to you.
                          <h2 />
@@ -19,7 +20,7 @@
 
           <section class="p-5">
                <div class="d-grid gap-2 col-3 mx-auto">
-                    <button class="btn btn-info" type="button">Get Started</button>
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" onclick="getStarted()">Get Started</button>
                </div>
           </section>
 
@@ -57,5 +58,23 @@
           </div>
      </body>
 
+<script>
+      var x = document.getElementById("login");
+               var y = document.getElementById("signup");
+               function getStarted() {
+                    if (x.classList.contains("d-block"))
+                    {
+                         x.classList.remove('d-block');
+                         x.classList.add('d-none');
+                    }
 
+                    if (y.classList.contains('d-none'))
+                    {
+                         y.classList.remove('d-none');
+                    }
+                    y.classList.add('d-block');
+
+               }
+
+</script>
 </html>

@@ -97,6 +97,28 @@
 	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.btn4 {
+	display: inline-block;
+	padding: 15px 25px;
+	font-size: 15px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration:white;
+	outline: none;
+	color: rgba(255, 255, 255, 0.986);
+	background-color: #33b5e5;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+  }
+  
+  .btn4:hover {background-color: #09f8d8}
+  
+  .btn4:active {
+	background-color: #33b5e5;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+  }
 .bg-blue {
 	background-color: #0559b3;
 }
