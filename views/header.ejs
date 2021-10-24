@@ -84,41 +84,47 @@
                               <div class="modal-body">
                                    <form id="login" class="d-block">
                                         <div class="mb-3">
-                                             <label for="username" class="col-form-label">Username:</label>
-                                             <input type="text" class="form-control" id="username">
+                                             <label for="email" class="col-form-label">Email:</label>
+                                             <input type="text" class="form-control" id="email" name="email" required>
                                         </div>
                                         <div class="mb-3">
                                              <label for="Password" class="col-form-label">Password:</label>
-                                             <input type="password" class="form-control" id="Password">
+                                             <input type="password" class="form-control" id="Password" name="password"
+                                                  required>
                                         </div>
                                         <div class=""><button type="submit" class="btn3">SIGN
                                                   IN</button>
                                         </div>
                                    </form>
 
-                                   <form id="signup" class="d-none">
+                                   <form id="signup" class="d-none" method="POST" action="/signup">
                                         <div class="mb-3">
-                                             <label for="firstname" class="col-form-label">First Name:</label>
-                                             <input type="text" class="form-control" id="firstname">
+                                             <label for="firstName" class="col-form-label">First Name:</label>
+                                             <input type="text" class="form-control" id="firstName" name="firstName"
+                                                  placeholder="First Name" required>
                                         </div>
                                         <div class="mb-3">
-                                             <label for="lastname" class="col-form-label">Last Name:</label>
-                                             <input type="text" class="form-control" id="lastname">
+                                             <label for="lastName" class="col-form-label">Last Name:</label>
+                                             <input type="text" class="form-control" id="lastName" name="lastName"
+                                                  placeholder="Last Name" required>
                                         </div>
                                         <div class="mb-3">
                                              <label for="email" class="col-form-label">Email:</label>
-                                             <input type="email" class="form-control" id="email">
+                                             <input type="email" class="form-control" id="email" name="email"
+                                                  placeholder="Username@mail.com" required>
                                         </div>
                                         <div class="mb-3">
                                              <label for="password" class="col-form-label">Password:</label>
-                                             <input type="password" class="form-control" id="password">
+                                             <input type="password" class="form-control" id="password" name="password"
+                                                  placeholder='Enter Password' required>
                                         </div>
                                         <div class="mb-3">
-                                             <label for="repassword" class="col-form-label">Re-Enter Password:</label>
-                                             <input type="password" class="form-control" id="repassword">
+                                             <label for="repassword" class="col-form-label">Re Enter Password:</label>
+                                             <input type="password" class="form-control" id="repassword"
+                                                  name="rePassword" placeholder='Re Enter Password' required>
                                         </div>
                                         <button type="reset" class="btn3"> Reset</button>
-                                        <button type="submit" class="btn3">Submit</button>
+                                        <input type="submit" class="btn3"></input>
                                    </form>
 
                               </div>

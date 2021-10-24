@@ -11,7 +11,7 @@
           <%- include('header.ejs') %>
      </head>
 
-     <body >
+     <body>
 
           <section class="p-5">
                <h2 class="container text-center"> Thank you from <%= title %> to you.
@@ -20,7 +20,8 @@
 
           <section class="p-5">
                <div class="d-grid gap-2 col-3 mx-auto">
-                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" onclick="getStarted()">Get Started</button>
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"
+                         onclick="getStarted()">Get Started</button>
                </div>
           </section>
 
@@ -58,23 +59,32 @@
           </div>
      </body>
 
-<script>
-      var x = document.getElementById("login");
-               var y = document.getElementById("signup");
-               function getStarted() {
-                    if (x.classList.contains("d-block"))
-                    {
-                         x.classList.remove('d-block');
-                         x.classList.add('d-none');
-                    }
+     <script>
+          var x = document.getElementById("login");
+          var y = document.getElementById("signup");
+          function getStarted() {
+               if (signupButton.classList.contains("btn2"))
+               {
+                    signupButton.classList.remove("btn2")
+                    signupButton.classList.add("change-background")
+               }
+               loginButton.classList.remove("change-background")
+               loginButton.classList.add("btn2")
 
-                    if (y.classList.contains('d-none'))
-                    {
-                         y.classList.remove('d-none');
-                    }
-                    y.classList.add('d-block');
-
+               if (x.classList.contains("d-block"))
+               {
+                    x.classList.remove('d-block');
+                    x.classList.add('d-none');
                }
 
-</script>
+               if (y.classList.contains('d-none'))
+               {
+                    y.classList.remove('d-none');
+               }
+               y.classList.add('d-block');
+
+          }
+
+     </script>
+
 </html>
